@@ -31,7 +31,7 @@ html, n = re.subn(r'<link rel="stylesheet" href="https://fonts\.googleapis\.com/
                   '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap">', html)
 assert n == 1, "não achei o link do Google Fonts"
 html = html.replace('<meta charset="utf-8">',
-                    '<meta charset="utf-8">\n<link rel="canonical" href="https://www.lais3d.com.br/prompt/">', 1)
+                    '<meta charset="utf-8">\n<meta name="robots" content="noindex,nofollow">', 1)
 cabecalho = ("---\n# Gerado automaticamente a partir de github.com/arqlais/prompt (scripts/publicar_portfolio.py).\n"
              "# Edite lá e publique de novo; mudanças feitas direto aqui se perdem.\n---\n")
 

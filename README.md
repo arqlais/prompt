@@ -11,9 +11,19 @@ Ferramenta do estúdio [lais3d.com.br](https://www.lais3d.com.br/): do print do 
 | Onde | Como a IA funciona |
 |---|---|
 | Artifact no claude.ai | Automático, pela sua conta do Claude. |
-| www.lais3d.com.br/prompt/ | Modo gratuito: a página monta o pedido, você cola num chat de IA gratuito (Claude, Gemini ou ChatGPT) com o print e cola a resposta de volta. |
+| www.lais3d.com.br/prompt/ | Automático pelo Gemini, com a sua chave gratuita do Google AI Studio. |
 
-Não há servidor nem chave de API: é uma página só (`index.html`).
+Não há servidor: é uma página só (`index.html`).
+
+### Gemini no site
+
+1. Crie a chave grátis em <https://aistudio.google.com/apikey> (conta Google, sem cartão).
+2. Abra www.lais3d.com.br/prompt/, cole a chave e clique em **entrar**. Ela fica salva só naquele navegador; em outro computador ou celular, cole de novo.
+3. O botão **gemini** no topo troca o modelo (Flash: mais usos grátis; Pro: mais caprichado) ou apaga a chave.
+
+A página abre numa tela de entrada e não aparece no Google, mas o GitHub Pages é público: quem tiver o endereço vê a tela de entrada, só que sem a sua chave não consegue usar a IA. No plano gratuito o Google pode usar o que você envia para melhorar os produtos dele.
+
+Se a cota grátis acabar, a página avisa; espere um pouco ou troque para o Flash. Se o Google estiver fora do ar quando você abrir a página, ela entra no modo copiar e colar, que funciona com qualquer chat de IA.
 
 ## Usar direto no Gemini (Gem)
 
