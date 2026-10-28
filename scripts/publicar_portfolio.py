@@ -8,6 +8,7 @@ Uso: python3 scripts/publicar_portfolio.py ../portfolio
 """
 import pathlib
 import re
+import shutil
 import sys
 
 raiz = pathlib.Path(__file__).resolve().parent.parent
@@ -38,4 +39,6 @@ cabecalho = ("---\n# Gerado automaticamente a partir de github.com/arqlais/promp
 destino = portfolio / "prompt" / "index.html"
 destino.parent.mkdir(exist_ok=True)
 destino.write_text(cabecalho + html, encoding="utf-8")
+# imagens de exemplo do método (cards, cenários de luz e mesmo ambiente)
+shutil.copytree(raiz / "exemplos", destino.parent / "exemplos", dirs_exist_ok=True)
 print(f"ok: {destino} ({len(html) // 1024} KB)")
