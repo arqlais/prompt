@@ -15,6 +15,17 @@ Ferramenta do estúdio [lais3d.com.br](https://www.lais3d.com.br/): do print do 
 
 Não há servidor nem chave de API: é uma página só (`index.html`).
 
+## Usar direto no Gemini (Gem)
+
+Um Gem é um assistente do Gemini com instruções fixas. Com ele, você manda só o print e o texto, sem abrir a página.
+
+1. Na página, aba **ajustes e pós** → card **Gem: seu gerador de prompts** → **copiar** (ou **baixar .txt**).
+2. Em <https://gemini.google.com/gems/create>, dê um nome (ex.: "Prompt de Render laís") e cole o texto em **Instruções**. Se o campo não aceitar o texto inteiro, escreva só "Siga exatamente as instruções do arquivo anexado" e anexe o `.txt` em **Conhecimento**.
+3. Salve. Para usar: abra o Gem, anexe o print e escreva os materiais do seu jeito. Comandos opcionais na mesma mensagem: `destino: chatgpt`, `cenário: Fim de tarde quente`, `luzes: 3000K`, `tamanho: 6000`, `vista: mar`.
+4. A resposta vem com `===PT===` e `===EN===`. Se quiser os contadores de caracteres, cole a resposta na página (modo gratuito, passo 3).
+
+Dica: no Gemini, use o modelo mais avançado disponível (Pro ou com raciocínio), que segue instruções longas com mais fidelidade.
+
 ## Atualizar a página do portfólio
 
 Edite `index.html` aqui e rode:
