@@ -45,3 +45,14 @@ python3 scripts/publicar_portfolio.py ../portfolio
 ```
 
 O script gera `portfolio/prompt/index.html` com as fontes do próprio site. Depois é só fazer commit no repositório do portfólio.
+
+## Conta (projetos em todos os aparelhos)
+
+No site (www.lais3d.com.br/prompt), o botão **entrar** usa o mesmo token do GitHub do painel (`/admin`). Se você já entrou no painel naquele aparelho, a página conecta sozinha.
+
+Os projetos salvos e a chave do Gemini ficam no arquivo `dados.json` do repositório **privado** `arqlais/prompt-dados`. Para configurar, só uma vez:
+
+1. Crie o repositório privado `prompt-dados` (link pronto dentro da página).
+2. No token do painel, em *Repository access*, adicione `prompt-dados` e deixe *Contents* em *Read and write*.
+
+No artefato do claude.ai a conta não aparece; lá vale exportar e importar o arquivo de projetos.
