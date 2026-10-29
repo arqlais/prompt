@@ -41,4 +41,7 @@ destino.parent.mkdir(exist_ok=True)
 destino.write_text(cabecalho + html, encoding="utf-8")
 # Firebase (conta): cópia local do SDK, para não depender do gstatic
 shutil.copytree(raiz / "vendor", destino.parent / "vendor", dirs_exist_ok=True)
+# app no iPad: ícones e manifesto (Revela)
+shutil.copytree(raiz / "icons", destino.parent / "icons", dirs_exist_ok=True)
+shutil.copy(raiz / "manifest.webmanifest", destino.parent / "manifest.webmanifest")
 print(f"ok: {destino} ({len(html) // 1024} KB)")
