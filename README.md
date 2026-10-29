@@ -48,11 +48,8 @@ O script gera `portfolio/prompt/index.html` com as fontes do próprio site. Depo
 
 ## Conta (projetos em todos os aparelhos)
 
-No site (www.lais3d.com.br/prompt), o botão **entrar** usa o mesmo token do GitHub do painel (`/admin`). Se você já entrou no painel naquele aparelho, a página conecta sozinha.
+No site (www.lais3d.com.br/prompt), o botão **entrar** usa a mesma conta do **Lâmpada** (Firebase `lampada-db06b`, plano grátis): Google ou e-mail e senha. Os projetos salvos e a chave do Gemini ficam em `users/{uid}/prompt/dados`, protegidos pelas regras que já existem (cada conta só lê e grava os próprios dados). Se a chave do Gemini já estiver no Lâmpada, ela é reaproveitada.
 
-Os projetos salvos e a chave do Gemini ficam no arquivo `dados.json` do repositório **privado** `arqlais/prompt-dados`. Para configurar, só uma vez:
+Para o login com Google funcionar no domínio, uma vez só: Firebase do Lâmpada → Authentication → Settings → Authorized domains → adicionar `www.lais3d.com.br` e `lais3d.com.br`.
 
-1. Crie o repositório privado `prompt-dados` (link pronto dentro da página).
-2. No token do painel, em *Repository access*, adicione `prompt-dados` e deixe *Contents* em *Read and write*.
-
-No artefato do claude.ai a conta não aparece; lá vale exportar e importar o arquivo de projetos.
+O SDK do Firebase vai junto em `vendor/firebase/` (copiado para o portfólio pelo script de publicação). No artefato do claude.ai a conta não aparece; lá vale exportar e importar o arquivo de projetos.
