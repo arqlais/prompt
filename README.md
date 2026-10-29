@@ -48,6 +48,6 @@ O script gera `portfolio/prompt/index.html` com as fontes do próprio site. Depo
 
 ## Conta (projetos em todos os aparelhos)
 
-No site (www.lais3d.com.br/prompt), o botão **entrar** usa o Firebase do **Lâmpada** (`lampada-db06b`, plano grátis), com e-mail e senha (dá para criar a conta na própria página). Os projetos salvos e a chave do Gemini ficam em `users/{uid}/prompt/dados`, protegidos pelas regras que já existem (cada conta só lê e grava os próprios dados). Login por e-mail e senha não precisa liberar domínio no Firebase.
+No site (www.lais3d.com.br/prompt), o botão **entrar** usa o Firebase do **Lâmpada** (`lampada-db06b`, plano grátis), com e-mail e senha. O site só abre para os e-mails da lista `DONAS` no index.html (hoje, arq.laisav@gmail.com); para liberar outra pessoa, crie a conta dela no Firebase do Lâmpada e acrescente o e-mail na lista. Os projetos salvos e a chave do Gemini ficam em `users/{uid}/prompt/dados`, protegidos pelas regras que já existem (cada conta só lê e grava os próprios dados). Login por e-mail e senha não precisa liberar domínio no Firebase.
 
 O SDK do Firebase vai junto em `vendor/firebase/` (copiado para o portfólio pelo script de publicação). No artefato do claude.ai a conta não aparece; lá vale exportar e importar o arquivo de projetos.
